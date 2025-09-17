@@ -10,7 +10,9 @@
 - Summarize findings in a clear and concise manner.
 
 ## Projects
-- **Fake_News_Detection** –  Analyze and detect fake news articles using Python, text preprocessing, feature extraction, and machine learning models. Includes data cleaning, exploratory data analysis, sentiment analysis, and predictive modeling to classify news as true or fake.
+- **Fake News Detection & Analysis in Real Time** - Analyze and detect fake news articles using Python, text preprocessing, feature extraction, and machine learning models. Includes data cleaning, exploratory data analysis, sentiment analysis, and predictive modeling to classify news as true or fake.
+
+- **Student Performance Prediction & Adaptive Learning System** -
 - YET Building -----
 
 ## License
