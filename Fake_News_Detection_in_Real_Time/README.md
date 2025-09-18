@@ -128,7 +128,7 @@ Dataset: **Kaggle – Fake and Real News Dataset**
 * Clone repo:
 
 ```bash
-git clone https://github.com/user/Data-Science-Projects/Fake_News_Detection_in_Real_Time
+git clone https://github.com/M-INDN-SEDTA/Data-Analysis-Projects/tree/main/Fake_News_Detection_in_Real_Time
 cd Fake_News_Detection_in_Real_Time
 ```
 
