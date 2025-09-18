@@ -1,0 +1,70 @@
+is_news = 
+IF ( 
+    'true_and_fake_news_clean_with_features'[label] = 1, 
+    "Yes", 
+    "No" 
+)
+subject_percentage = 
+DIVIDE (
+    COUNTROWS ( 'true_and_fake_news_clean_with_features' ),
+    CALCULATE (
+        COUNTROWS ( 'true_and_fake_news_clean_with_features' ),
+        ALL ( 'true_and_fake_news_clean_with_features' )
+    ),
+    0
+)
+
+
+Yes_Percentage = 
+DIVIDE(
+    CALCULATE(
+        COUNTROWS('true_and_fake_news_clean_with_features'),
+        'true_and_fake_news_clean_with_features'[is_news] = "Yes"
+    ),
+    CALCULATE(
+        COUNTROWS('true_and_fake_news_clean_with_features'),
+        ALL('true_and_fake_news_clean_with_features'),
+        VALUES('true_and_fake_news_clean_with_features'[subject])
+    ),
+    0
+)
+No_Percentage = 
+DIVIDE(
+    CALCULATE(
+        COUNTROWS('true_and_fake_news_clean_with_features'),
+        'true_and_fake_news_clean_with_features'[is_news] = "No"
+    ),
+    CALCULATE(
+        COUNTROWS('true_and_fake_news_clean_with_features'),
+        ALL('true_and_fake_news_clean_with_features'),
+        VALUES('true_and_fake_news_clean_with_features'[subject])
+    ),
+    0
+)
+
+Total Rows = COUNTROWS('true_and_fake_news_clean_with_features')
+
+Avg Word Count Yes = 
+CALCULATE(
+    AVERAGE('true_and_fake_news_clean_with_features'[word_count]),
+    'true_and_fake_news_clean_with_features'[is_news] = "Yes"
+)
+
+Avg Word Count No = 
+CALCULATE(
+    AVERAGE('true_and_fake_news_clean_with_features'[word_count]),
+    'true_and_fake_news_clean_with_features'[is_news] = "No"
+)
+
+
+Avg Char Count Yes = 
+CALCULATE(
+    AVERAGE('true_and_fake_news_clean_with_features'[char_count]),
+    'true_and_fake_news_clean_with_features'[is_news] = "Yes"
+)
+
+Avg Char Count No = 
+CALCULATE(
+    AVERAGE('true_and_fake_news_clean_with_features'[char_count]),
+    'true_and_fake_news_clean_with_features'[is_news] = "No"
+)
