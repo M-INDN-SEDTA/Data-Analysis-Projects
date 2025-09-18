@@ -1,0 +1,16 @@
+⚠️ **Note:**
+Due to the large size of the dataset, it cannot be uploaded directly.
+Please download the dataset from Kaggle: [Fake News Detection Datasets](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets/data)
+
+📂 Place the dataset in the `datasets/` folder (or the current project folder).
+Then run either:
+
+* `Fake_News_Detection_in_Real_Time.ipynb` (Jupyter Notebook)
+* `Fake_News_Detection_in_Real_Time.py` (Python script)
+
+These scripts will generate the following processed datasets:
+
+* `true_and_fake_news_clean.csv`
+* `true_and_fake_news_clean_with_features.csv`
+
+Please ensure the project structure is followed as described in **README.md**.
