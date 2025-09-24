@@ -32,12 +32,12 @@
 │   ├── student_performance.csv
 │   └── student_performance_expanded_cols.csv
 │
-├── Power BI dax quries/                           # DAX queries for Power BI dashboard
+├── Power BI dax quries/                                             # DAX queries for Power BI dashboard
 │
-├── requirements.txt                               # Python dependencies
+├── requirements.txt                                                 # Python dependencies
 │
-├── Student Performance Dashboard.pdf              # PDF report of dashboard
-├── Student Performance Dataset To SQL DB.ipynb    # Notebook to load dataset into SQL DB
+├── Student Performance Dashboard.pdf                                # PDF report of dashboard
+├── Student Performance Dataset To SQL DB.ipynb                      # Notebook to load dataset into SQL DB
 ├── Student Performance Prediction & Adaptive Learning Report.pdf    # Full project report
 ├── Student Performance Prediction and Adaptive Learning.ipynb       # Jupyter Notebook
 ├── Student Performance Prediction and Adaptive Learning.py          # Python script version
@@ -113,7 +113,7 @@ Key insights include:
 * Clone repo:
 
 ```bash
-git clone https://github.com/YourGitHubUsername/Student_Performance_Prediction_and_Adaptive_Learning
+git clone https://github.com/M-INDN-SEDTA/Data-Analysis-Projects/tree/main/Student_Performance_Prediction_and_Adaptive_Learning
 cd Student_Performance_Prediction_and_Adaptive_Learning
 ```
 
@@ -128,6 +128,8 @@ pip install -r requirements.txt
 ```bash
 jupyter notebook "Student Performance Prediction and Adaptive Learning.ipynb"
 ```
+Note: If the above code give errors while executing please rename its filename to "Student_Performance_Prediction_and_Adaptive_Learning.ipynb"
+and use this name instead.
 
 ---
 
