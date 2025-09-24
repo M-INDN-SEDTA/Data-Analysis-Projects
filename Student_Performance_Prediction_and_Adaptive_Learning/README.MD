@@ -2,7 +2,7 @@
 
 ### 1. **Project Title & Description**
 
-* **Name:** `Student_Performance_Prediction_and_Adaptive_Learning`
+* **Name:** `Student Performance Prediction and Adaptive Learning`
 
 * **Type:** Data Analysis / Machine Learning / Educational Analytics Project
 
