@@ -12,7 +12,9 @@
 ## Projects
 - **Fake News Detection & Analysis in Real Time** - Analyze and detect fake news articles using Python, text preprocessing, feature extraction, and machine learning models. Includes data cleaning, exploratory data analysis, sentiment analysis, and predictive modeling to classify news as true or fake.
 
-- **Student Performance Prediction & Adaptive Learning System** -
+- **Student Performance Prediction & Adaptive Learning System** - Analyze and predicts student performance using Python, data preprocessing, feature engineering, and machine learning. Includes data cleaning, exploratory analysis, SQL integration, and interactive Power BI dashboards to deliver insights and adaptive learning recommendations.
+
+- **Other Projects** 
 - YET Building -----
 
 ## License

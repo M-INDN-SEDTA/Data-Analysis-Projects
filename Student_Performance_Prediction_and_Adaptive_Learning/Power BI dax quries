@@ -1,0 +1,31 @@
+Dropout_Rate = 
+DIVIDE(
+    COUNTROWS(
+        FILTER(
+            student_performance,
+            student_performance[Dropout_Likelihood] = "Yes"
+        )
+    ),
+    COUNTROWS(student_performance),
+    0
+)
+
+
+Engagement_Numeric =
+SWITCH(
+    student_performance[Engagement_Level],
+    "Low", 1,
+    "Medium", 2,
+    "High", 3,
+    BLANK()
+)
+
+Video_Time_Quartile =
+SWITCH(
+    TRUE(),
+    student_performance[Time_Spent_on_Videos] <= 150, "Q1",
+    student_performance[Time_Spent_on_Videos] <= 300, "Q2",
+    student_performance[Time_Spent_on_Videos] <= 450, "Q3",
+    "Q4"
+)
+
